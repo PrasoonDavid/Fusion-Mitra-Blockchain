@@ -5,33 +5,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
 </head>
 <body>
 
-<div class="container">
-<div class="row" style="margin-top: 5%">
-	<div class="col-md-3"></div>
-	<div class="col-md-6">
-  <div class="panel panel-info" >
-		<div class="panel-heading" style="text-align: center;">
-			<h1>Fusion Mitra</h1>
-		</div>
-    <div class="panel-body">
-			<div>
-				<br>
-				<a href="Parts.html" class="btn btn-info" role="button" style="width:100%;">Parts</a>
-				<br><br>
-				<a href="dealer.html" class="btn btn-info" role="button" style="width:100%;">Dealer</a>
-				<br><br>
-				<a href="car_factory.html" class="btn btn-info" role="button" style="width:100%;">Factory</a>
-			</div>
-		</div>
-  </div>
+<div class="background-wrap">
+	<div class="background"></div>
 </div>
-	<div class=col-md-3></div>
-</div>
-</div>
+
+<form id="accesspanel" action="login" method="post">
+	<h1 id="litheader">Fusion Mitra</h1>
+	<div class="inset">
+		<p>
+			<button id="parts" onclick=" setTimeout(function(){ window.open('Parts.html','_self');}, 1500)">Parts</button>
+		</p>
+		<br>
+		<p>
+			<button id="dealer" onclick=" setTimeout(function(){ window.open('dealer.html','_self');}, 1500)">Dealer</button>
+		</p>
+		<br>
+		<p>
+			<button id="product" onclick=" setTimeout(function(){ window.open('car_factory.html','_self');}, 1500)">Product</button>
+		</p>
+	</div>
+</form>
 </body>
 </html>
